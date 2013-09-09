@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>  
+<Scripts>
+    <textbox>
+       <src></src>
+       <args></args>
+       <function></function>  
+       <name>description</name>  
+       <content>000</content>  
+    </textbox>
+    <textbox>
+       <src></src>
+       <args>bgImg:BG3|bgExt:jpg|time1:1000|time2:500</args>
+       <function></function>
+       <name>bgImg</name>  
+       <content></content>  
+    </textbox> 
+    <textbox>
+       <src>./img/headico/1.png</src>
+       <args></args>
+       <function></function>  
+       <name>甲</name>  
+       <content>111</content>  
+    </textbox>  
+    <textbox>
+       <src>./img/headico/2.png</src>
+       <args></args>
+       <function></function>
+       <name>乙</name>  
+       <content>222</content>  
+    </textbox>
+    <textbox>
+       <src></src>
+       <args>bgImg:BG2|bgExt:jpg|time1:1000|time2:500</args>
+       <function></function>
+       <name>bgImg</name>  
+       <content></content>  
+    </textbox>
+    <textbox>
+       <src>./img/headico/3.png</src>
+       <args></args>
+       <function></function>  
+       <name>丙</name>  
+       <content>333</content>  
+    </textbox>
+     <textbox>
+       <src>option1:1|option2:2|option3:8|option4:7</src>
+       <args></args>
+       <function></function>  
+       <name>option</name>  
+       <content>
+       <options oid="6">
+        <option Name="option1">
+          <optioncontent>选项1</optioncontent>
+          <optionvalue>1</optionvalue>
+        </option>
+        <option Name="option2">
+          <optioncontent>选项2</optioncontent>
+          <optionvalue>2</optionvalue>
+        </option>
+        <option Name="option3">
+          <optioncontent>选项3</optioncontent>
+          <optionvalue>8</optionvalue>
+        </option>
+        <option Name="option4">
+          <optioncontent>选项4</optioncontent>
+          <optionvalue>7</optionvalue>
+        </option>
+        </options>
+       </content>  
+    </textbox>
+    <textbox>
+       <src>./img/headico/4.png</src>
+       <args></args>
+       <function></function>  
+       <name>丁</name>  
+       <content>444</content>  
+    </textbox>
+<!--     <textbox>
+       <src>option1:1|option2:2|option3:8|option4:7</src>  
+       <name>option</name>  
+       <content>
+       <options oid="8">
+        <option Name="option1">
+          <optioncontent>选项5</optioncontent>
+          <optionvalue>2</optionvalue>
+        </option>
+        <option Name="option2">
+          <optioncontent>选项6</optioncontent>
+          <optionvalue>1</optionvalue>
+        </option>
+        <option Name="option3">
+          <optioncontent>选项7</optioncontent>
+          <optionvalue>7</optionvalue>
+        </option>
+        <option Name="option4">
+          <optioncontent>选项8</optioncontent>
+          <optionvalue>4</optionvalue>
+        </option>
+        </options>
+       </content>  
+    </textbox>  --> 
+    <textbox>
+       <src>./img/headico/5.png</src>
+       <args></args>
+       <function></function>   
+       <name>戊</name>  
+       <content>555</content>  
+    </textbox>
+    <textbox>
+       <src></src>
+       <args></args>
+       <function></function>   
+       <name>end</name>  
+       <content></content>  
+    </textbox>     
+</Scripts> 

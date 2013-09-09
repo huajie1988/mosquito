@@ -1,0 +1,184 @@
+#main{
+	width: 80%;
+	height: 600px;
+	margin-left: 10%;
+}
+.initMain{
+	background-image:url('../img/BG0.jpg');
+	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+   -moz-background-size:100% 100%;
+   background-size:100% 100%;
+
+}
+.titleli{
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	width: 30%;
+	height: 35px;
+	text-align: center;
+	color: #fff;
+	position: relative;left: 35%; top: 380px;
+	margin-top: 3px;
+	font-family: "Microsoft YaHei", Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	cursor: default ;
+}
+.titleli_rev{
+	color: #000;
+
+}
+.title{
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	width: 30%;
+	height: 35px;
+	text-align: center;
+	color: #fff;
+	position: relative;left: 37%; top: 100px;
+	margin-top: 3px;
+	font-family: "Microsoft YaHei", Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	cursor: default ;
+}
+#textBox{
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	background:rgba(102, 102, 102, 0.6);
+	width: 80%;
+	height: 160px;
+	text-align: center;
+	color: #fff;
+	position: relative;left: 10%; top: 380px;
+	margin-top: 3px;
+	font-family: "Microsoft YaHei", Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	cursor: default ;
+}
+.headIco img{
+/*	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;*/
+	width: 160px;
+	height: 160px;
+	float: left;
+/*	text-align: center;
+	color: #fff;*/
+	position: relative;left: 0px; top: -30px;
+	/*margin-top: 3px;*/
+/*	font-family: "Microsoft YaHei", Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 24px;*/
+	cursor: default ;
+}
+.Name{
+	/*float: left;*/
+	text-align: left;
+	position: relative;left: 170px; top: 0px;
+	color: #fff;
+	cursor: default ;
+}
+.Content{
+	text-align: left;
+	position: relative;left: 0px; top: 10px;
+	color: #fff;
+	cursor: default ;
+}
+#description{
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	background:rgba(102, 102, 102, 0.6);
+	width: 80%;
+	height: 90%;
+	text-align: center;
+	color: #fff;
+	position: relative;left: 10%; bottom: -10%;
+	margin-top: 3px;
+	font-family: "Microsoft YaHei", Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	cursor: default ;
+}
+
+.optionli{
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	color: #fff;
+	position: relative;left: 35%; top: 200px;
+	background:rgba(102, 102, 102, 0.6);
+	margin-top: 3px;
+	font-family: "Microsoft YaHei", Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	cursor: default ;
+}
+#options{
+	position: absolute;left: 22%; top: -100px;
+	width: 30%;
+}
+#menu{
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	color: #fff;
+	font-family: "Microsoft YaHei", Geneva, sans-serif;
+	position: absolute;left: 13%; top: 0px;
+	background:rgba(102, 102, 102, 0.6);
+	/*width: 30px;*/
+	list-style-type:none;
+	width: 70%;
+	height: 7%;
+}
+#menu li{
+	display:inline-block;    
+	list-style-type:none; 
+	height:90%;
+	width:23%;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	text-align:center;
+	font-size:14px;
+	margin-left:5px;
+	cursor: default ;
+}
+.saveList{
+	float:left;
+	height: 160px;
+	width: 160px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	background:rgba(102, 102, 102, 0.6);
+	cursor: default ;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+#savePage{
+	float: left;
+	background:rgba(90, 90, 90, 0.6);
+	position: relative;left: 10%; bottom: -10%;
+	width: 80%;
+	height: 90%;
+	overflow:auto;
+}
+.saveImg img{
+	height: 160px;
+	width: 160px;
+}
+.savename{
+	color: #fff;
+	font-family: "Microsoft YaHei", Geneva, sans-serif;
+	position: relative;left: 35%; top: -3px;
+}

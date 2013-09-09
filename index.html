@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/mosquito.js"></script>
+	<title></title>
+</head>
+<body>
+<div id="main">
+</div>
+<div>
+	<ul id="menu">
+		<li id="save">保存档案</li>
+		<li id="load">读取存档</li>
+		<li id="toMain">回到主菜单</li>
+		<li id="close">结束游戏</li>
+	</ul>
+</div>
+
+<div id="testDiv">放在我上面</div> 
+<script type="text/javascript">
+$(document).ready(function(){
+	initMain();
+	myMouseMove();
+	chooseCaption();
+	textBoxClick();
+	chooseOption();
+	Menu();
+	chooseSaveData();
+	chooseSaveLocaltion();
+	notSave();
+});
+
+</script>
+</body>
+</html>
