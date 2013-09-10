@@ -249,13 +249,14 @@ function startGame(){
 }
 
 function readScript(i){
+  // if(isFirst)
+    // alert(isFirst);
     $.ajax({
       url:"./data/Script.xml",
       dataType:"xml",
       type:"get",
       success:function(xml){
         var scriptJduge=$(xml).find("name").eq(i).text();
-
         switch(scriptJduge)
             {
             case "description":
@@ -400,6 +401,9 @@ function addSaveData(dataNum,type){
   imgAddr=imgAddr.slice(4,imgAddr.length-1);
   imgAddr=imgAddr.split(host);
   imgAddr="./"+imgAddr[imgAddr.length-1];
+  imgAddrs=imgAddr.split("\"");
+  imgAddr=imgAddrs[0];
+  // alert(imgAddr);
   dataNum=parseInt(dataNum)+1;
   if(imgAddr!=null && dataNum !=null && count !=null){  
                 localStorage.setItem('saveNum',saveNum);
@@ -442,7 +446,7 @@ function notSave(){
         initMain();
         isFirst=false;
       }
-      else
+      else if(menuStatus)
       {
         is_Option(count);
      // alert(isOption);
@@ -454,6 +458,8 @@ function notSave(){
         readScript(count);
         isFirst=false;
       }
+      else
+        isFirst=true;
     });
   
 } 

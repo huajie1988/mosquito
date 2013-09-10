@@ -6,29 +6,45 @@
 </head>  
    
 <body>  
-<h1>你好，<span id="name">我好像不认识你</span></h1>  
+<h1>你应该有<span id="saveNum"></span>个存档</h1>
+<h1>你实际有<span id="saveNum_t"></span>个存档</h1>   
 <p><button type="button" onclick="rmMem()">忘记我吧！</button></p>  
 <script type="text/javascript">  
 <!--  
 window.onload=function(){  
     if(('localStorage' in window) && window['localStorage'] !== null){  
-        var name=localStorage.getItem('name');  
-        if(name==null){  
-            name=prompt("你的名字是？",'丸子');  
-            if(name!=null){  
-                localStorage.setItem('name',name);  
-                document.getElementById('name').innerHTML=name;  
-            }  
+        var saveNum=localStorage.getItem('saveNum');  
+        if(saveNum==null){  
+            saveNum=0;
+                document.getElementById('saveNum').innerHTML=saveNum;   
         }else{  
-            document.getElementById('name').innerHTML=name;  
-        }  
+            document.getElementById('saveNum').innerHTML=saveNum;  
+        }
+        var saveNum_t=0;
+        for (var i = 1; i <= 20; i++) {
+              var savetmp="savedata"+i;
+              if(localStorage.getItem(savetmp)!=null)
+              {
+                // alert(localStorage.getItem(savetmp));
+                saveNum_t++;
+              }
+                
+          };
+          document.getElementById('saveNum_t').innerHTML=saveNum_t;  
     }else{  
         alert('天啊，你还在用这么土的浏览器！');  
     }  
 }  
 function rmMem(){  
-    document.getElementById('name').innerHTML='我好像不认识你';  
-    localStorage.removeItem('name');  
+    // document.getElementById('saveNum').innerHTML='0';  
+    localStorage.clear();
+    // for (var i = 1; i <= 20; i++) {
+    //           var savetmp="savedata"+i;
+    //           if(localStorage.getItem(savetmp)!=null)
+    //             localStorage.removeItem(savetmp);
+    //             // alert(localStorage.getItem(savetmp));
+    //             // saveNum_t++;
+    //       };  
     alert('清除记忆成功！');  
 }  
 //-->  
