@@ -4,61 +4,74 @@
 	margin-left: 10%;
 }
 .initMain{
-	background-image:url('../img/BG0.jpg');
+	background-image:url('../img/BG/BGTitle.jpg');
 	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
    -moz-background-size:100% 100%;
    background-size:100% 100%;
 
 }
 .titleli{
-	border-style: solid;
+	/*border-style: solid;
 	border-width: 1px;
-	border-radius: 5px;
+	border-radius: 5px;*/
 	width: 30%;
 	height: 35px;
 	text-align: center;
 	color: #fff;
-	position: relative;left: 35%; top: 380px;
+	position: relative;left: 35%; top: 380px;top:360px\9;
 	margin-top: 3px;
 	font-family: "Microsoft YaHei", Geneva, sans-serif;
-	font-weight: bold;
-	font-size: 24px;
+	/*font-weight: bold;*/
+	font-size: 26px;
+	letter-spacing: 5px;
 	cursor: default ;
 }
 .titleli_rev{
-	color: #000;
-
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+	filter: dropshadow(OffX=2, OffY=2, Color='ff00de', Positive='true');
+	filter:Blur(Add="1",Direction="145",Strength="5");
+	filter:Glow(Color='ff00de', Strength="5");
 }
 .title{
-	border-style: solid;
+	/*border-style: solid;
 	border-width: 1px;
 	border-radius: 5px;
-	width: 30%;
+	width: 30%;*/
 	height: 35px;
+	height:60px\9;
 	text-align: center;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+	filter: dropshadow(OffX=2, OffY=2, Color='ff00de', Positive='true');
+	filter:Blur(Add="1",Direction="145",Strength="5");
+	filter:Glow(Color='ff00de', Strength="5");
 	color: #fff;
-	position: relative;left: 37%; top: 100px;
+	position: relative;/*left: 37%; */top: 100px;
 	margin-top: 3px;
 	font-family: "Microsoft YaHei", Geneva, sans-serif;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 55px;
 	cursor: default ;
 }
 #textBox{
-	border-style: solid;
+	/*border-style: solid;
 	border-width: 1px;
-	border-radius: 5px;
-	background:rgba(102, 102, 102, 0.6);
-	width: 80%;
-	height: 160px;
+	border-radius: 5px;*/
+	/*background:rgba(102, 102, 102, 0.6);*/
+	opacity: 0.8;
+	background-image: url('../img/textbox.png');
+	background-repeat:no-repeat;
+	/*width: 80%;*/
+	height: 220px;
 	text-align: center;
 	color: #fff;
 	position: relative;left: 10%; top: 380px;
 	margin-top: 3px;
 	font-family: "Microsoft YaHei", Geneva, sans-serif;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 26px;
 	cursor: default ;
+	word-wrap: break-word; 
+	word-break: normal; 
 }
 .headIco img{
 /*	border-style: solid;
@@ -83,11 +96,43 @@
 	color: #fff;
 	cursor: default ;
 }
+.Name_pi{
+	/*float: left;*/
+	text-align: left;
+	position: relative;left: -240px; top: 0px;
+	color: #fff;
+	cursor: default ;
+}
 .Content{
 	text-align: left;
 	position: relative;left: 0px; top: 10px;
 	color: #fff;
 	cursor: default ;
+	overflow: auto;
+}
+.Content_r{
+	/*float: left;*/
+	text-align: left;
+	position: relative;left: -240px; top: 10px;
+	color: #fff;
+	cursor: default ;
+	overflow: auto;
+}
+.Content_c{
+	/*float: left;*/
+	text-align: left;
+	position: relative;left: -240px; top: 22px;
+	color: #fff;
+	cursor: default ;
+	overflow: auto;
+}
+.Content_l{
+	/*float: left;*/
+	text-align: left;
+	position: relative;left: -240px; top: 10px;
+	color: #fff;
+	cursor: default ;
+	overflow: auto;
 }
 #description{
 	border-style: solid;
@@ -104,6 +149,8 @@
 	font-weight: bold;
 	font-size: 24px;
 	cursor: default ;
+	word-wrap: break-word; 
+	word-break: normal; 
 }
 
 .optionli{
@@ -181,4 +228,53 @@
 	color: #fff;
 	font-family: "Microsoft YaHei", Geneva, sans-serif;
 	position: relative;left: 35%; top: -3px;
+}
+
+.personImg img{
+/*	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	width: 160px;*/
+	height: 350px;
+	float: left;
+/*	text-align: center;
+	color: #fff;*/
+	position: relative;left: 115px; top: 30px;
+	/*margin-top: 3px;*/
+/*	font-family: "Microsoft YaHei", Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 24px;*/
+	cursor: default ;
+}
+.personImg_r img{
+/*	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	width: 160px;*/
+	height: 350px;
+	float: left;
+/*	text-align: center;
+	color: #fff;*/
+	position: relative;left: 630px; top: 30px;
+	/*margin-top: 3px;*/
+/*	font-family: "Microsoft YaHei", Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 24px;*/
+	cursor: default ;
+}
+.personImg_c img{
+/*	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	width: 160px;*/
+	height: 350px;
+	float: left;
+/*	text-align: center;
+	color: #fff;*/
+	position: relative;left: 350px; top: 30px;
+	/*margin-top: 3px;*/
+/*	font-family: "Microsoft YaHei", Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 24px;*/
+	cursor: default ;
 }

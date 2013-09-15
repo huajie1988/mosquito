@@ -3,6 +3,7 @@ var menuStatus=false;
 var isSave=false;
 var isOption=false;
 var isFirst=true;
+var isMusicChange=true;
 $.ajaxSetup({ 
     async : false 
 }); 
@@ -150,7 +151,7 @@ function chooseSaveLocaltion(){
 function clearScenes(time,bgNo,bgExtension){
     var bgExtension = arguments[2] ? arguments[2] : "jpg";
     $("#main").text("").animate({opacity:"0"},time,function(){
-        (bgNo!="")?bgurl="url('./img/"+bgNo+"."+bgExtension+"')":bgurl="url('')";  
+        (bgNo!="")?bgurl="url('"+BGPATH+bgNo+"."+bgExtension+"')":bgurl="url('')";  
         $("#main").css("background-image",bgurl);
         
     });
@@ -279,8 +280,44 @@ function readScript(i){
               var textbox="";
               break;
             default:
-              var textbox="<div id='textBox'><div class='Name'>"+$(xml).find("name").eq(i).text()+"</div><div class='headIco'>"+"<img src='"+$(xml).find("src").eq(i).text()+"'/>"+"</div><div class='Content'>"+$(xml).find("content").eq(i).text()+"</div></div>";
+              piArgs= dealArgs($(xml).find("args").eq(i).text());
+              // alert(piArgs['personimg']);
+              if(typeof(piArgs['personimg'])!="undefined"){
+                switch(piArgs['personimg']){
+                case "right":
+                var textbox="<div class='personImg_r'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/></div>"+"<div id='textBox'><div class='Name_pi'>"+$(xml).find("name").eq(i).text()+"</div><div class='Content_r'>"+$(xml).find("content").eq(i).text()+"</div></div>";
+                break;
+                case "center":
+                var textbox="<div class='personImg_c'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/></div>"+"<div id='textBox'><div class='Name_pi'>"+$(xml).find("name").eq(i).text()+"</div><div class='Content_c'>"+$(xml).find("content").eq(i).text()+"</div></div>";
+                break;
+                default:
+                var textbox="<div class='personImg'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/></div>"+"<div id='textBox'><div class='Name_pi'>"+$(xml).find("name").eq(i).text()+"</div><div class='Content_l'>"+$(xml).find("content").eq(i).text()+"</div></div>";
+                }
+
+              }
+              else
+                var textbox="<div id='textBox'><div class='Name'>"+$(xml).find("name").eq(i).text()+"</div><div class='headIco'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/>"+"</div><div class='Content'>"+$(xml).find("content").eq(i).text()+"</div></div>";
             }
+          var functionjd=$(xml).find("function").eq(i).text();
+          if(functionjd)
+          {
+            functionjd= dealArgs(functionjd);
+            
+            if(functionjd['audiochange'] && isMusicChange)
+            {
+                $("#aduio").attr("src",MUSIC_PATH+functionjd['audiochange']);
+                $("#bgsound").attr("src",MUSIC_PATH+functionjd['audiochange']);
+                isMusicChange=false;
+               // alert(i);
+               // $("#aduio").removeAttr("autoplay");
+            }
+
+            if(functionjd['audioplay'])
+            {
+                isMusicChange=true;
+               $("#aduio").attr("autoplay","autoplay");
+            }
+          }
         // var textbox="<div id='textBox'><div class='Name'>"+$(xml).find("name").eq(i).text()+"</div><div class='headIco'>"+$(xml).find("src").eq(i).text()+"</div><div class='Content'>"+$(xml).find("content").eq(i).text()+"</div></div>";
            $("#main").html(textbox);
             // alert(textbox);
@@ -377,12 +414,12 @@ function Menu()
    xx = e.originalEvent.x || e.originalEvent.layerX || 0; 
    yy = e.originalEvent.y || e.originalEvent.layerY || 0;
    if((yy>0 && yy<100)&& menuStatus){
-    $("#menu").fadeIn(500);
+    $("#menu").fadeIn(500).end;
     $('#testDiv').text(xx + '---' + yy);
    }
   else
   {
-     $("#menu").fadeOut(500);
+     $("#menu").fadeOut(500).end;
      $('#testDiv').text(xx + '...' + yy); 
   }
     

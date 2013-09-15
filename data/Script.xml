@@ -15,15 +15,15 @@
        <content></content>  
     </textbox> 
     <textbox>
-       <src>./img/headico/1.png</src>
-       <args></args>
-       <function></function>  
+       <src>1.png</src>
+       <args>personimg:left</args>
+       <function>audiochange:1.mp3</function>  
        <name>甲</name>  
        <content>111</content>  
     </textbox>  
     <textbox>
-       <src>./img/headico/2.png</src>
-       <args></args>
+       <src>2.png</src>
+       <args>personimg:center</args>
        <function></function>
        <name>乙</name>  
        <content>222</content>  
@@ -36,9 +36,9 @@
        <content></content>  
     </textbox>
     <textbox>
-       <src>./img/headico/3.png</src>
-       <args></args>
-       <function></function>  
+       <src>4.png</src>
+       <args>personimg:right</args>
+       <function>audiochange:团子大家族.mp3|audioplay:yes</function>  
        <name>丙</name>  
        <content>333</content>  
     </textbox>
@@ -69,8 +69,8 @@
        </content>  
     </textbox>
     <textbox>
-       <src>./img/headico/4.png</src>
-       <args></args>
+       <src>3.png</src>
+       <args>personimg:center</args>
        <function></function>  
        <name>丁</name>  
        <content>444</content>  
@@ -100,15 +100,15 @@
        </content>  
     </textbox>  --> 
     <textbox>
-       <src>./img/headico/5.png</src>
-       <args></args>
+       <src>5.png</src>
+       <args>personimg:right</args>
        <function></function>   
        <name>戊</name>  
        <content>555</content>  
     </textbox>
     <textbox>
        <src></src>
-       <args></args>
+       <args>personimg:left</args>
        <function></function>   
        <name>end</name>  
        <content></content>  
