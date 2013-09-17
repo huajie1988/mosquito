@@ -95,6 +95,8 @@ function chooseOption(){
     $(document).on('click', '.optionli', function() {
           isOption=false;
           count=$(this).attr("value");
+          var fav=$(this).attr("data-favorite");
+          updatefav(fav);
           readScript($(this).attr("value"));
           $("#options").remove();
           // $(this).siblings().removeClass("titleli_rev");
@@ -149,6 +151,7 @@ function chooseSaveLocaltion(){
 }
 
 function clearScenes(time,bgNo,bgExtension){
+  $(document).snowfall('clear');
     var bgExtension = arguments[2] ? arguments[2] : "jpg";
     $("#main").text("").animate({opacity:"0"},time,function(){
         (bgNo!="")?bgurl="url('"+BGPATH+bgNo+"."+bgExtension+"')":bgurl="url('')";  
@@ -389,9 +392,12 @@ function getOption(i){
          oName = field.attr("Name");//读取节点属性 
          oContent = field.find("optioncontent").text();//读取子节点的值
          oValue = field.find("optionvalue").text();
-         // alert(oContent);
+         oFun = dealArgs(field.find("optionfunction").text());
+         // alert(oFun['favorite']);
+         if(typeof(oFun['favorite']) == "undefined")
+          oFun['favorite']="0";
          // if(fieldname!="")
-         select+="<li class='optionli' value='"+oValue+"'>"+oContent+"</li>";
+         select+="<li class='optionli' "+"data-favorite="+oFun['favorite']+" value='"+oValue+"'>"+oContent+"</li>";
          // alert(select);
           // if(typeof(titleName) == "undefined")
           //    titleName = field.find("titlename").text();
@@ -500,3 +506,35 @@ function notSave(){
     });
   
 } 
+
+function updatefav(str){
+  if(str!="0")
+  {
+    strs=str.split(",");
+    favkey=strs[0]+"fav";
+    checkFav(favkey,strs)
+  }
+  else
+    strs=str;
+  // var str_arr=new Array();
+
+  
+}
+
+function checkFav(favkey,strs){
+    if(('localStorage' in window) && window['localStorage'] !== null){  
+        var favKey=localStorage.getItem(favkey);  
+        if(favKey==null || favKey=="0"){
+            if(parseInt(strs[1])<0)  
+               favKey="0";
+            else
+               favKey=parseInt(strs[1]);
+            localStorage.setItem(favkey,favKey);
+            }else{  
+               favKey=parseInt(favKey)+parseInt(strs[1]);
+               localStorage.setItem(favkey,favKey);
+            }  
+        }else{  
+            alert('天啊，你还在用这么土的浏览器！');  
+        }
+}

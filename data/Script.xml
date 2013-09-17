@@ -51,18 +51,26 @@
        <options oid="6">
         <option Name="option1">
           <optioncontent>选项1</optioncontent>
+          <optionargs></optionargs>
+          <optionfunction></optionfunction>
           <optionvalue>1</optionvalue>
         </option>
         <option Name="option2">
           <optioncontent>选项2</optioncontent>
+          <optionargs></optionargs>
+          <optionfunction>favorite:person2,-5</optionfunction>
           <optionvalue>2</optionvalue>
         </option>
         <option Name="option3">
           <optioncontent>选项3</optioncontent>
+          <optionargs></optionargs>
+          <optionfunction>favorite:person1,-5</optionfunction>
           <optionvalue>8</optionvalue>
         </option>
         <option Name="option4">
           <optioncontent>选项4</optioncontent>
+          <optionargs></optionargs>
+          <optionfunction>favorite:person1,10</optionfunction>
           <optionvalue>7</optionvalue>
         </option>
         </options>

@@ -7,13 +7,14 @@
 	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/config.js"></script>
 	<script type="text/javascript" src="./js/mosquito.js"></script>
+	<script type="text/javascript" src='./js/snowfall.jquery.js'></script>
 	<title></title>
 </head>
 <body>
 	<!--[if lt IE 8]>
 	<bgsound  id="bgsound" src="./BGM/团子大家族.mp3"> 
 	<![endif]-->
-	<!-- <audio id="aduio" src="./BGM/团子大家族.mp3" autoplay="autoplay" loop="loop"></audio> -->
+	<!-- <audio id="aduio" src="./BGM/ed7001.ogg" autoplay="autoplay" loop="loop"></audio> -->
 <div id="main">
 </div>
 <div>
@@ -37,6 +38,7 @@ $(document).ready(function(){
 	chooseSaveData();
 	chooseSaveLocaltion();
 	notSave();
+$(document).snowfall({image :"img/sakura/flake-75-10.png", minSize: 5, maxSize:8});
 });
 
 </script>
