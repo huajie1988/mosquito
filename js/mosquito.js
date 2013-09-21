@@ -230,7 +230,7 @@ function loadCheck(){
 }
 
 function startGame(){
-    clearScenes(1000,"BG1","jpg");
+    clearScenes(1000,"CHIP00B4","jpg");
     loadScenes(1000);
     menuStatus=true;
     // $.ajax({
@@ -266,7 +266,7 @@ function readScript(i){
             case "description":
               // startGame();
               // alert(scriptJduge);
-              var textbox="<div id='description'>"+$(xml).find("content").eq(i).text()+"</div>";
+              var textbox="<div id='description'>"+htmlReplace($(xml).find("content").eq(i).text())+"</div>";
               break;
             case "bgImg":
               var bgArgs= dealArgs($(xml).find("args").eq(i).text());
@@ -280,7 +280,9 @@ function readScript(i){
               getOption(count);
               break;
             case "end":
-              var textbox="";
+              window.location.reload();
+              // var textbox="";
+              // toMain();
               break;
             default:
               piArgs= dealArgs($(xml).find("args").eq(i).text());
@@ -288,18 +290,18 @@ function readScript(i){
               if(typeof(piArgs['personimg'])!="undefined"){
                 switch(piArgs['personimg']){
                 case "right":
-                var textbox="<div class='personImg_r'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/></div>"+"<div id='textBox'><div class='Name_pi'>"+$(xml).find("name").eq(i).text()+"</div><div class='Content_r'>"+$(xml).find("content").eq(i).text()+"</div></div>";
+                var textbox="<div class='personImg_r'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/></div>"+"<div id='textBox'><div class='Name_pi'>"+$(xml).find("name").eq(i).text()+"</div><div class='Content_r'>"+htmlReplace($(xml).find("content").eq(i).text())+"</div></div>";
                 break;
                 case "center":
-                var textbox="<div class='personImg_c'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/></div>"+"<div id='textBox'><div class='Name_pi'>"+$(xml).find("name").eq(i).text()+"</div><div class='Content_c'>"+$(xml).find("content").eq(i).text()+"</div></div>";
+                var textbox="<div class='personImg_c'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/></div>"+"<div id='textBox'><div class='Name_pi'>"+$(xml).find("name").eq(i).text()+"</div><div class='Content_c'>"+htmlReplace($(xml).find("content").eq(i).text())+"</div></div>";
                 break;
                 default:
-                var textbox="<div class='personImg'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/></div>"+"<div id='textBox'><div class='Name_pi'>"+$(xml).find("name").eq(i).text()+"</div><div class='Content_l'>"+$(xml).find("content").eq(i).text()+"</div></div>";
+                var textbox="<div class='personImg'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/></div>"+"<div id='textBox'><div class='Name_pi'>"+$(xml).find("name").eq(i).text()+"</div><div class='Content_l'>"+htmlReplace($(xml).find("content").eq(i).text())+"</div></div>";
                 }
 
               }
               else
-                var textbox="<div id='textBox'><div class='Name'>"+$(xml).find("name").eq(i).text()+"</div><div class='headIco'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/>"+"</div><div class='Content'>"+$(xml).find("content").eq(i).text()+"</div></div>";
+                var textbox="<div id='textBox'><div class='Name'>"+$(xml).find("name").eq(i).text()+"</div><div class='headIco'>"+"<img src='"+HEADICO_PATH+$(xml).find("src").eq(i).text()+"'/>"+"</div><div class='Content'>"+htmlReplace($(xml).find("content").eq(i).text())+"</div></div>";
             }
           var functionjd=$(xml).find("function").eq(i).text();
           if(functionjd)
@@ -537,4 +539,10 @@ function checkFav(favkey,strs){
         }else{  
             alert('天啊，你还在用这么土的浏览器！');  
         }
+}
+
+function htmlReplace(str){
+    str=str.replace(/\{\[/g,"<");
+    str=str.replace(/\]\}/g,">");
+    return str;
 }

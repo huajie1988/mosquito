@@ -82,7 +82,7 @@
 	float: left;
 /*	text-align: center;
 	color: #fff;*/
-	position: relative;left: 0px; top: -30px;
+	position: relative;left: 0px; top: 22px;
 	/*margin-top: 3px;*/
 /*	font-family: "Microsoft YaHei", Geneva, sans-serif;
 	font-weight: bold;
@@ -92,20 +92,20 @@
 .Name{
 	/*float: left;*/
 	text-align: left;
-	position: relative;left: 170px; top: 0px;
+	position: relative;left: 60px; top: 0px;
 	color: #fff;
 	cursor: default ;
 }
 .Name_pi{
 	/*float: left;*/
 	text-align: left;
-	position: relative;left: -240px; top: 0px;
+	position: relative;left: -380px; top: 0px;
 	color: #fff;
 	cursor: default ;
 }
 .Content{
 	text-align: left;
-	position: relative;left: 0px; top: 10px;
+	position: relative;left: -85px; top: 40px;
 	color: #fff;
 	cursor: default ;
 	overflow: auto;
@@ -113,7 +113,7 @@
 .Content_r{
 	/*float: left;*/
 	text-align: left;
-	position: relative;left: -240px; top: 10px;
+	position: relative;left: -380px; top: 40px;
 	color: #fff;
 	cursor: default ;
 	overflow: auto;
@@ -121,7 +121,7 @@
 .Content_c{
 	/*float: left;*/
 	text-align: left;
-	position: relative;left: -240px; top: 22px;
+	position: relative;left: -380px; top: 22px;
 	color: #fff;
 	cursor: default ;
 	overflow: auto;
@@ -129,7 +129,7 @@
 .Content_l{
 	/*float: left;*/
 	text-align: left;
-	position: relative;left: -240px; top: 10px;
+	position: relative;left: -380px; top: 40px;
 	color: #fff;
 	cursor: default ;
 	overflow: auto;
@@ -235,7 +235,7 @@
 	border-width: 1px;
 	border-radius: 5px;
 	width: 160px;*/
-	height: 350px;
+	/*height: 350px;*/
 	float: left;
 /*	text-align: center;
 	color: #fff;*/
@@ -251,7 +251,7 @@
 	border-width: 1px;
 	border-radius: 5px;
 	width: 160px;*/
-	height: 350px;
+	/*height: 350px;*/
 	float: left;
 /*	text-align: center;
 	color: #fff;*/
@@ -267,7 +267,7 @@
 	border-width: 1px;
 	border-radius: 5px;
 	width: 160px;*/
-	height: 350px;
+	/*height: 350px;*/
 	float: left;
 /*	text-align: center;
 	color: #fff;*/
