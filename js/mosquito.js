@@ -295,7 +295,7 @@ function readScript(i){
               break;
             default:
               piArgs= dealArgs($(xml).find("args").eq(i).text());
-              // alert(piArgs['personimg']);
+              // alert(count);
               if(typeof(piArgs['personimg'])!="undefined"){
                 switch(piArgs['personimg']){
                 case "right":
@@ -319,11 +319,12 @@ function readScript(i){
             
             if(functionjd['audiochange'] && isMusicChange)
             {
-                $("#aduio").attr("src",MUSIC_PATH+functionjd['audiochange']);
+                
                 var tmp_aduio=functionjd['audiochange'].split(".");
                 if($.browser.msie) { 
                   $("#aduio").attr("src",MUSIC_PATH+tmp_aduio[0]+".mp3");
-                  } 
+                  }else
+                  $("#aduio").attr("src",MUSIC_PATH+functionjd['audiochange']);
                 $("#bgsound").attr("src",MUSIC_PATH+functionjd['audiochange']);
                 nowMusic=functionjd['audiochange'];
                 isMusicChange=false;
@@ -367,7 +368,7 @@ function is_Option(i){
 
 
 function textBoxClick(){
-    $(document).on('click', '#textBox,#textBox>div,#description', function(){
+    $(document).on('click', '#textBox,#description', function(){
       if(!isOption)
       {
          count++;
