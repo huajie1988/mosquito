@@ -3,7 +3,7 @@
     <textbox>
        <src></src>
        <args></args>
-       <function></function>  
+       <function>audiochange:none.mp3|audioplay:no</function>  
        <name>description</name>  
        <content>{[br]}谨以此献给我至今为止最爱的人</content>  
     </textbox>
@@ -17,7 +17,7 @@
     <textbox>
        <src></src>
        <args>bgImg:S0400|bgExt:jpg|time1:1000|time2:500</args>
-       <function></function>
+       <function>audiochange:BGM002.ogg|audioplay:yes</function>
        <name>bgImg</name>  
        <content></content>  
     </textbox> 
@@ -61,7 +61,7 @@
        <args></args>
        <function></function>
        <name>我</name>  
-       <content>哦，对了，我该介绍一下自己吗？我叫华杰，大体上{[br]}算是个非常普通的人。。。吧。长相和帅字完全八杆{[br]}子打不着，头脑也不算聪明，就连健康也偶尔会让人{[br]}担心，总之应该是个比较悲剧的人物了。。。</content>  
+       <content>哦，对了，我该介绍一下自己吗？我叫华杰，大体上{[br]}算是个非常普通的人。。。吧。长相和帅字完全八杆{[br]}子打不着，头脑也不算聪明，就连健康也偶尔会让人{[br]}担心，总之应该是个比较悲剧的人物了,唯一有些特别的。。。</content>  
     </textbox>
     <textbox>
        <src>me.png</src>
@@ -75,14 +75,14 @@
        <args></args>
        <function></function>
        <name>我</name>  
-       <content>嗯？你问这哥们是谁？大体上是我的里人格吧。似乎{[br]}他从我记事起就一直在我身边了，主要负责吐槽我自{[br]}己，确保我在任何时候至少有三分的冷静，而不会做{[br]}错事。。。当然至于他的真实目的，谁知道呢？</content>  
+       <content>嗯，是的，唯一特别的就是他了，大体上是我的里人格吧。{[br]}似乎他从我记事起就一直在我身边了，主要负责吐槽我自{[br]}己，确保我在任何时候至少有三分的冷静，而不会做错事{[br]}。。。真不知道该说幸运呢，还是不幸╮（╯_╰）╭</content>  
     </textbox>
     <textbox>
        <src>Plac.png</src>
        <args></args>
        <function></function>
        <name>我</name>  
-       <content>话说今天是开学日了吧，暑假过得真快啊！我都还没{[br]}准备好就莫名其妙成为高中生了。。。是该庆幸还是{[br]}悲哀？不知道新分到的同学会是什么样子呢？是该期{[br]}待一下吗？</content>  
+       <content>话说今天是开学日了吧，暑假过得真快啊！我都还没{[br]}准备好就莫名其妙成为高中生了。。。增伤感（┬_┬）{[br]}不知道新分到的同学会是什么样子呢？是该期待一下吗？</content>  
     </textbox>
     <textbox>
        <src>Plac.png</src>
@@ -117,19 +117,19 @@
        <args>personimg:left</args>
        <function></function>  
        <name>老妈</name>  
-       <content>路上小心点</content>  
+       <content>路上给我小心点</content>  
     </textbox>
     <textbox>
        <src>Plac.png</src>
        <args></args>
        <function></function>
        <name>我</name>  
-       <content>"我知道了！"我边说边向前走着。</content>  
+       <content>"我知道了！"我边说边向学校走着。</content>  
     </textbox>   
     <textbox>
        <src></src>
        <args>bgImg:BG7|bgExt:jpg|time1:1000|time2:500</args>
-       <function></function>
+       <function>audiochange:ed7002.ogg|audioplay:yes</function>
        <name>bgImg</name>  
        <content></content>  
     </textbox>
@@ -164,7 +164,7 @@
     <textbox>
        <src></src>
        <args>bgImg:S0420|bgExt:jpg|time1:1000|time2:500</args>
-       <function></function>
+       <function>audiochange:BGM028.ogg|audioplay:yes</function>
        <name>bgImg</name>  
        <content></content>  
     </textbox>
@@ -312,7 +312,7 @@
     <textbox>
        <src></src>
        <args>bgImg:S1601|bgExt:jpg|time1:1000|time2:500</args>
-       <function></function>
+       <function>audiochange:BGM007.ogg|audioplay:yes</function>
        <name>bgImg</name>  
        <content></content>  
     </textbox>
@@ -390,7 +390,7 @@
     <textbox>
        <src></src>
        <args>bgImg:S0320|bgExt:jpg|time1:1000|time2:500</args>
-       <function></function>
+       <function>audiochange:M05.ogg|audioplay:yes</function>
        <name>bgImg</name>  
        <content></content>  
     </textbox>
@@ -460,7 +460,7 @@
     <textbox>
        <src></src>
        <args>bgImg:S0350|bgExt:jpg|time1:1000|time2:500</args>
-       <function></function>
+       <function>audiochange:BGM100.ogg|audioplay:yes</function>
        <name>bgImg</name>  
        <content></content>  
     </textbox>
@@ -525,7 +525,7 @@
        <args>personimg:left</args>
        <function></function>
        <name>我(里)</name>  
-       <content>"手机杀手(坏了两部，被偷一部)，床系生物(从来就没打算离开过)，眼镜娘，天然呆，元气娘，半宅(热衷电视剧及电影)，喜欢萌，喜欢柯南，喜欢黑白配(信息较旧)"</content>  
+       <content>"手机杀手(坏了两部，被偷一部\("▔□▔)/\("▔□▔)/\("▔□▔)/)，床系生物(从来就没打算离开过)，眼镜娘，天然呆，元气娘，半宅(热衷电视剧及电影)，喜欢萌，喜欢柯南，喜欢黑白配(信息较旧)"</content>  
     </textbox>
     <textbox>
        <src>me.png</src>
@@ -560,35 +560,35 @@
        <args></args>
        <function></function>
        <name>我</name>  
-       <content>"似乎的确没什么有用的信息嘛。。。完了，搞不定啊{[br]}！"</content>  
+       <content>"似乎的确没什么有用的信息嘛。。。你说的这些我也知道啊{[br]}。。。完了，搞不定啊！"</content>  
     </textbox>
     <textbox>
        <src>me.png</src>
        <args>personimg:left</args>
        <function></function>
        <name>我(里)</name>  
-       <content>"以上信息应该足够了，OK，友情赠送两条无关信息:三三、小德"</content>  
+       <content>"以上信息应该足够了吧，OK，友情赠送两条无关信息:三三、小德"</content>  
     </textbox>
     <textbox>
        <src>Plac.png</src>
        <args></args>
        <function></function>
        <name>我</name>  
-       <content>"额。。。难道你觉得她会喜欢MT？又或是喜欢猫？"</content>  
+       <content>"额。。。难道你觉得她会喜欢MT？又或是喜欢猫？(°□°；)"</content>  
     </textbox>
     <textbox>
        <src>me.png</src>
        <args>personimg:left</args>
        <function></function>
        <name>我(里)</name>  
-       <content>"谁知道呢？"</content>  
+       <content>"谁知道呢？=￣ω￣="</content>  
     </textbox>
     <textbox>
        <src>Plac.png</src>
        <args></args>
        <function></function>
        <name>我</name>  
-       <content>"嗯？我该采信这个建议吗？"</content>  
+       <content>"那？我该采信这个建议吗？"</content>  
     </textbox>
     <textbox>
        <src></src>
@@ -662,7 +662,7 @@
     <textbox>
        <src></src>
        <args>bgImg:S2900|bgExt:jpg|time1:1000|time2:500</args>
-       <function></function>
+       <function>audiochange:BGM22.ogg|audioplay:yes</function>
        <name>bgImg</name>  
        <content></content>  
     </textbox>
@@ -671,14 +671,14 @@
        <args></args>
        <function></function>
        <name>我</name>  
-       <content>"先是理科生，后是文科生，啥时候来个程序员版本啊{[br]}！"</content>  
+       <content>"嗯，这咖啡还是不错的嘛！话说那个AVG游戏似乎很火的{[br]}样子啊，先是理科生，后是文科生，为啥没人来个程序员版{[br]}本啊！"</content>  
     </textbox>
     <textbox>
        <src>me.png</src>
        <args>personimg:right</args>
        <function></function>
        <name>我(里)</name>  
-       <content>"估计是觉得用制作工具没前途吧"</content>  
+       <content>"估计程序猿是觉得用制作工具没前途吧"</content>  
     </textbox>
     <textbox>
        <src>Plac.png</src>
@@ -727,12 +727,12 @@
        <args></args>
        <function></function>
        <name>我</name>  
-       <content>"你真好XD"</content>  
+       <content>"你真好 (≧▽≦) "</content>  
     </textbox>
     <textbox>
        <src></src>
        <args>bgImg:S0430|bgExt:jpg|time1:1000|time2:500</args>
-       <function></function>
+       <function>audiochange:emotional flutter.ogg|audioplay:yes</function>
        <name>bgImg</name>  
        <content></content>  
     </textbox>
@@ -741,7 +741,7 @@
        <args>personimg:right</args>
        <function></function>
        <name>我(里)</name>  
-       <content>"话说怎么了？这么失落？"</content>  
+       <content>"话说怎么了？灯也不开，这么失落？"</content>  
     </textbox>
     <textbox>
        <src>Plac.png</src>
@@ -762,7 +762,7 @@
        <args></args>
        <function></function>
        <name>我</name>  
-       <content>"你这是在补刀吗？我也不知道，为什么会着急，只是{[br]}忽然有些害怕。"</content>  
+       <content>"你这是在补刀吗？我也不知道，为什么会着急，只是{[br]}忽然有些不爽，有些害怕。"</content>  
     </textbox>
     <textbox>
        <src>me.png</src>
@@ -790,7 +790,7 @@
        <args></args>
        <function></function>
        <name>我</name>  
-       <content>"正是这样，她身边优秀的男生如此之多，我既没钱又{[br]}没长相，唯有一颗真心喜欢她的心，却也因为太过激{[br]}进而被Pass。那你觉得面对这样一场毫无胜算的比赛{[br]}我有必要再去参加吗？"</content>  
+       <content>"正是这样，她身边优秀的男生如此之多，我既没钱又{[br]}没长相，唯有一颗喜欢她的真心，却也因为太过激{[br]}进而被Pass。那你觉得面对这样一场毫无胜算的比赛{[br]}我有必要再去参加吗？"</content>  
     </textbox>
     <textbox>
        <src>me.png</src>
@@ -839,7 +839,7 @@
        <args></args>
        <function></function>  
        <name>description</name>  
-       <content>{[br]}{[br]}{[br]}{[br]}{[br]}虽然真的还有很多话想跟你说，{[br]}聊聊柯南，看看电影，扯扯穿越，and so on {[br]}但我希望能在未来慢慢的和你分享。</content>  
+       <content>{[br]}{[br]}{[br]}{[br]}{[br]}虽然真的还有很多话想跟你说，{[br]}聊聊柯南，看看电影，扯扯穿越，and so on {[br]}或许这些我现在并不擅长，{[br]}但我希望能在未来慢慢的融入你的生活，{[br]}和你分享你的欢笑，你的哭泣，你的一点一滴。</content>  
     </textbox>
     <textbox>
        <src></src>

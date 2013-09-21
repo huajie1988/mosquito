@@ -4,6 +4,7 @@ var isSave=false;
 var isOption=false;
 var isFirst=true;
 var isMusicChange=true;
+var nowMusic="";
 $.ajaxSetup({ 
     async : false 
 }); 
@@ -113,6 +114,14 @@ function chooseSaveData(){
             count=$(this).attr("value");
             loadScenes(500);
             menuStatus=true;
+            $("#aduio").attr("src",MUSIC_PATH+$(this).attr("data-music"));
+            var tmp_aduio=$(this).attr("data-music").split(".");
+                if($.browser.msie) { 
+                  $("#aduio").attr("src",MUSIC_PATH+tmp_aduio[0]+".mp3");
+                  } 
+            $("#bgsound").attr("src",MUSIC_PATH+$(this).attr("data-music"));
+            nowMusic=$(this).attr("data-music");
+            // isMusicChange=false;
           }
 
           // readScript($(this).attr("value"));
@@ -170,7 +179,7 @@ function loadScenes(time){
             readScript(count-1);
       }
       readScript(count);
-
+      // nowMusic=localStorage.getItem('saveNum');
     });
     // $("#main").fadeIn(time);
     // $("#main").addClass("initMain").;
@@ -201,12 +210,12 @@ for (var i = 1; i <= saveNum; i++) {
   savedata[i]=dealArgs(savedata[i]);
   var sImgs=savedata[i]["dataimg"].split("/");
   sImgs=sImgs[sImgs.length-1].split(".");
-  savePage+="<div class='saveList' data-Num="+(parseInt(i)-1)+" data-img-src='"+sImgs[0]+"' value='"+savedata[i]["datavalue"]+"'>"+"<div class='saveImg'><img src='"+savedata[i]["dataimg"]+"' /></div><div class='savename'>"+savedata[i]["datasavename"]+"</div><div class='savetime'>"+savedata[i]["gametime"]+"</div></div>";
+  savePage+="<div class='saveList'"+" data-music='"+savedata[i]["BGM"]+"' data-Num="+(parseInt(i)-1)+" data-img-src='"+sImgs[0]+"' value='"+savedata[i]["datavalue"]+"'>"+"<div class='saveImg'><img src='"+savedata[i]["dataimg"]+"' /></div><div class='savename'>"+savedata[i]["datasavename"]+"</div><div class='savetime'>"+savedata[i]["gametime"]+"</div></div>";
   // alert(savedata[i]["datavalue"]);
 
 };
   for (var i = saveNum; i <= 19; i++) {
-    savePage+="<div class='saveList' data-Num="+i+" data-img-src='"+"' value='"+"'>"+"<div class='saveImg'><img src='"+"' /></div><div class='savename'>"+"无存档"+"</div><div class='savetime'>"+"</div></div>";
+    savePage+="<div class='saveList' data-music='' data-Num="+i+" data-img-src='"+"' value='"+"'>"+"<div class='saveImg'><img src='"+"' /></div><div class='savename'>"+"无存档"+"</div><div class='savetime'>"+"</div></div>";
   };
   savePage+="</div>";
       // alert(savePage);
@@ -311,7 +320,12 @@ function readScript(i){
             if(functionjd['audiochange'] && isMusicChange)
             {
                 $("#aduio").attr("src",MUSIC_PATH+functionjd['audiochange']);
+                var tmp_aduio=functionjd['audiochange'].split(".");
+                if($.browser.msie) { 
+                  $("#aduio").attr("src",MUSIC_PATH+tmp_aduio[0]+".mp3");
+                  } 
                 $("#bgsound").attr("src",MUSIC_PATH+functionjd['audiochange']);
+                nowMusic=functionjd['audiochange'];
                 isMusicChange=false;
                // alert(i);
                // $("#aduio").removeAttr("autoplay");
@@ -353,7 +367,7 @@ function is_Option(i){
 
 
 function textBoxClick(){
-    $(document).on('click', '#textBox,#description', function(){
+    $(document).on('click', '#textBox,#textBox>div,#description', function(){
       if(!isOption)
       {
          count++;
@@ -453,7 +467,7 @@ function addSaveData(dataNum,type){
   if(imgAddr!=null && dataNum !=null && count !=null){  
                 localStorage.setItem('saveNum',saveNum);
                 var savedataName="savedata"+dataNum;
-                var savedataValue="datavalue:"+count+"|dataimg:"+imgAddr+"|datasavename:存档"+dataNum+"|gametime:"+myDate.getTime();  
+                var savedataValue="datavalue:"+count+"|dataimg:"+imgAddr+"|datasavename:存档"+dataNum+"|gametime:"+myDate.getTime()+"|BGM:"+nowMusic;  
                 localStorage.setItem(savedataName,savedataValue);
                 // document.getElementById('name').innerHTML=name;  
      }
