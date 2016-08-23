@@ -1,0 +1,101 @@
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
+    cursor: default ;
+    font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+.toolbar{
+    margin-top: 5px;
+}
+
+.nav>li>a:hover{
+    background-color: #fff;
+}
+
+.person{
+    position: absolute;
+    bottom: 0px;
+}
+
+.person-position img{
+    width: 100%;
+}
+
+.dialog{
+    position: absolute;
+    bottom: 10px;
+    opacity: 0.95;
+}
+
+.dialog-name{
+    background: url("../img/name.png") no-repeat left;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.dialog-name-text{
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    top: 20%;
+    left: 2%;
+}
+
+.dialog-textbox{
+    background: url("../img/dialog.png") no-repeat left;
+    height: 165px;
+}
+
+.dialog-textbox-text{
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    top: 20%;
+    left: 3%;
+}
+
+.option-list{
+    margin-top: 20px;
+    opacity: 0.95;
+}
+
+.description{
+    height: 520px;
+    background-color: #999;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.description-text{
+    margin-top: 20px;
+    font-size: 35px;
+    color: #FFF;
+    position: absolute;
+    word-break: break-all;
+    height: 500px;
+    overflow-y: hidden;
+}
+
+.start-title{
+    font-size: 50px;
+    color: #FFF;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+    font-weight: bold;
+    margin-top: 120px;
+}
+
+.start-choice{
+    font-size: 26px;
+    position: absolute;
+    top: 300px;
+}
+
+.start-choice li{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+}
+
+.start-choice li:hover{
+    color: #FFF;
+}

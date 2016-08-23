@@ -1,0 +1,31 @@
+{
+  "name": "mosquito",
+  "version": "1.0.0",
+  "description": "js AVG Game",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-react": "^6.11.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-react": "^6.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huajie1988/mosquito.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huajie1988/mosquito/issues"
+  },
+  "homepage": "https://github.com/huajie1988/mosquito#readme",
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "mosquito",
+  "homepage": "https://github.com/huajie1988/mosquito",
+  "authors": [
+    "huajie1988 <whuajie1988@gmail.com>"
+  ],
+  "description": "A js AVG game engine",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/common",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "react": "^15.3.0"
+  }
+}

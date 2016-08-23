@@ -199,6 +199,8 @@ parts/
 var/
 sdist/
 develop-eggs/
+node_modules/
+resource/BGM/*
 .installed.cfg
 
 # Installer logs

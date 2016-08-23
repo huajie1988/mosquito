@@ -3,47 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<script type="text/javascript" src="./js/jquery.js"></script>
-	<script type="text/javascript" src="./js/config.js"></script>
-	<script type="text/javascript" src="./js/mosquito.js"></script>
-	<script type="text/javascript" src='./js/snowfall.jquery.js'></script>
-	<title></title>
+    <link rel="stylesheet" type="text/css" href="./lib/common/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./resource/css/style.css">
+    <script type="text/javascript" src="./lib/common/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./lib/common/react/react.js"></script>
+    <script type="text/javascript" src="./lib/common/react/react-dom.js"></script>
+	<title>AVG Game</title>
 </head>
 <body>
-	<!--[if lte IE 8]>
-	<bgsound  id="bgsound" src="./BGM/ed7001.mp3"> 
-	<![endif]-->
-	<audio id="aduio" autoplay="autoplay" loop="loop">
-		<source src="./BGM/ed7001.ogg" type="audio/ogg">
-  		<source src="./BGM/ed7001.mp3" type="audio/mpeg">
-	</audio>
-<div id="main">
-</div>
-<div>
-	<ul id="menu">
-		<li id="save">保存档案</li>
-		<li id="load">读取存档</li>
-		<li id="toMain">回到主菜单</li>
-		<li id="close">结束游戏</li>
-	</ul>
-</div>
 
-<!-- <div id="testDiv">放在我上面</div>  -->
-<script type="text/javascript">
-$(document).ready(function(){
-	initMain();
-	myMouseMove();
-	chooseCaption();
-	textBoxClick();
-	chooseOption();
-	Menu();
-	chooseSaveData();
-	chooseSaveLocaltion();
-	notSave();
-$(document).snowfall({image :"img/sakura/flake-75-10.png", minSize: 5, maxSize:8});
-});
-
-</script>
+<div class="row">
+    <div class="col-md-10 col-md-offset-1" id="main" style="height: 600px;margin-top: 1%;background:url(./resource/img/bg/BGTitle.jpg) no-repeat fixed center center;" >
+    </div>
+</div>
+    <script type="text/javascript" src="./lib/mosquito/component/toolbar.js"></script>
+    <script type="text/javascript" src="./lib/mosquito/component/person.js"></script>
+    <script type="text/javascript" src="./lib/mosquito/component/dialog.js"></script>
+    <script type="text/javascript" src="./lib/mosquito/component/option.js"></script>
+    <script type="text/javascript" src="./lib/mosquito/component/description.js"></script>
+    <script type="text/javascript" src="./lib/mosquito/component/start.js"></script>
+    <script type="text/javascript" src="./lib/mosquito/component/scene.js"></script>
+    <script type="text/javascript" src="./lib/mosquito/index.js"></script>
 </body>
 </html>
